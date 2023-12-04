@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+/*colors
+Light Brown #9E8047(158,128,71)
+Light Cream #C2B59A (194,181,154)
+Orange #F06A0C (72,242,208)
+Dark Gray #1A1A1A (26, 26, 26)
+*/
+html {
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body {
+    margin: 5px;
+}
+.hero_image{
+    background-image: linear-gradient(rgba(0,0,0,0.4), 
+    rgba(0,0,0,0.4)), url(Images/coffee_shop.jpg);
+}
+.hero_header {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+.button{
+    background-color: #494949;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 6px 3px;
+    padding: 20px 40px;
+    cursor: pointer;
+
+}
+/*------IMAGES-----*/
+img{
+    max-width: 100%;
+}
+
+
+/*-----GRID -INDEX PAGE----*/
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    'welcome    welcome     welcome'
+    'hl1        hl2         hl3'
+    'about      about       about'
+    'pr1        pr2         pr3'
+    'review     review      review'
+}
+#welcome {
+    grid-area: welcome;
+    object-fit: cover;
+}
+#hlight1 {
+    grid-area: hl1;
+    object-fit: cover;
+}
+#hlight2 {
+    grid-area: hl2;
+    object-fit: cover;
+}
+#hlight3 {
+    grid-area: hl3;
+    object-fit: cover;
+}
+#about {
+
+    grid-area: about;
+    object-fit: cover;
+}
+
+#product1{
+    grid-area: pr1;
+    object-fit: cover;
+}
+#product2{
+    grid-area: pr2;
+    object-fit: cover;
+}
+#product3{
+    grid-area: pr3;
+    object-fit: cover;
+}
+#review {
+     grid-area: review;
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    color:#9E8047;
+    background-color: #1a1a1a;
+    margin: 0;
+}
+/*-----Grid Style----*/
+#problem, #review {
+    margin:0px 15px 0px 30px;
+    padding:60px 0px 60px 0px;
+}
+#hlight1, #hlight2, #hlight3{
+    margin: 20px;
+}
+#product1, #product2, #product3 {
+    margin: 40px;
+}
+#about{
+    margin: 60px;
+}
+
+/*------Nav Style------*/
+.main_nav{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    background-color: #494949;
+    padding: .3em;
+    margin: 0;
+}
+.main_nav a {
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+.main_nav a:hover{
+    background-color: white;
+    color:#F06A0C;
+
+}
+li.logo{
+    margin-right: auto;
+}
+
+h1 {
+    font: bold 2.2em Times,serif;
+    color:  #F06A0C;
+    text-shadow: .05em .05em .1em rgb(49, 49, 49)
+}
+
+h2 {
+    font: bold 1.2em Times,serif;
+    text-transform: uppercase;
+    color: #8A703E;
+    letter-spacing: .4em;
+}
+dt {
+    font-weight:bold;
+    color:  #F06A0C;
+}
+
+.price {
+
+    font-weight: bold;
+    font-style: italic;
+}
+
+strong {
+    font-style: italic;
+
+}
+/*----Responsive Gallery----*/
+.container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'grid1  grid2   grid3   grid4'
+    'grid5  grid6   grid7   grid8'
+    'grid9  grid10  grid11  grid12'
+    ;
+}
+
+.grid1 {
+    grid-area: grid1;
+
+}
+.grid2 {
+    grid-area: grid2;
+
+}
+.grid3 {
+    grid-area: grid3;
+
+}
+.grid4 {
+    grid-area: grid4;
+
+}
+.grid5 {
+    grid-area: grid5;
+
+}
+.grid6 {
+    grid-area: grid6;
+
+}
+.grid7 {
+    grid-area: grid7;
+
+}
+.grid8 {
+    grid-area: grd8;
+
+}
+.grid9 {
+    grid-area: grid9;
+
+}
+.grid10 {
+    grid-area: grid10;
+
+}
+.grid11 {
+    grid-area: grid11;
+
+}
+.grid12 {
+    grid-area: grid12;
+
+}
+
+
+
+/* all the same color- or different ones below
+
+#drinks, #treats, #healthy {
+     border: 2px solid; 
+     background color: rgba (49, 49, 49)
+     padding: 5px 20px;
+     margins: 10px 20px;
+
+}
+
+#drinks {
+    border: 2px solid; 
+     background-color: #494949
+     padding 5px 20px;
+     margin: 10px 20px;
+}
+
+#treats { 
+    border: 2px solid; 
+     background-color: #494949
+     padding 5px 20px;
+     margin: 10px 20px;
+}
+
+#Healthy {
+
+    border: 2px solid; 
+     background-color: #494949
+     padding 5px 20px;
+     margin: 10px 20px;
+}
